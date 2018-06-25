@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="question1">1. Which of the following types of teeth is used by mammals to tear food material?</string>
+    <string name="question1_choice1">Canines</string>
+    <string name="question1_choice2">Incisors </string>
+    <string name="question1_choice3">Molars </string>
+    <string name="question1_choice4">Premolars </string>
+
+    <string name="question2">2. What process involves treating rubber with sulfur to harden it?</string>
+
+    <string name="question3">3. Name two element which can be considered as a semi-metal.</string>
+    <string name="question3_choice1">Argon</string>
+    <string name="question3_choice2">Germanium</string>
+    <string name="question3_choice3">Silicon</string>
+    <string name="question3_choice4">Sodium</string>
+
+    <string name="question4">4. This word describes the force that pulls objects to the middle of the earth?</string>
+
+    <string name="question5">5. An example of a derived quantity is</string>
+    <string name="question5_choice1">Length </string>
+    <string name="question5_choice2">Mass </string>
+    <string name="question5_choice3">Temperature</string>
+    <string name="question5_choice4">Volume</string>
+
+    <string name="question6">6. Cumulus and Cirrus are types of what?</string>
+
+    <string name="question7">7. Which of the following sources of energy is / are renewable? </string>
+    <string name="question7_choice1">Solar</string>
+    <string name="question7_choice2">Crude oil</string>
+    <string name="question7_choice3">Wind</string>
+
+    <string name="question8">8. Where in the human body would you find the scaphoid bone?</string>
+
+    <string name="question9">9. Which of the following substances is a compound?</string>
+    <string name="question9_choice1">Hydrogen </string>
+    <string name="question9_choice2">Nitrogen</string>
+    <string name="question9_choice3">Oxygen</string>
+    <string name="question9_choice4">Water</string>
+
+    <string name="question10">10. What process involves heating an ore to obtain a metal?</string>
+
+    <string name="submit">Submit</string>
+    <string name="title_activity_results">Results</string>
+    <string name="title_activity_main">Integrated Science</string>
+
+
+</resources>
