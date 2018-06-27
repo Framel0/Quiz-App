@@ -14,34 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
-    // Question 1
-    RadioButton question1Choice3;
-    // Question 2
-    EditText question2Answer;
-    // Question 3
-    CheckBox question3Choice1;
-    CheckBox question2Choice2;
-    CheckBox question3Choice3;
-    CheckBox question3Choice4;
-    // Question 4
-    EditText question4Answer;
-    // Question 5
-    RadioButton question5Choice4;
-    // Question 6
-    EditText question6Answer;
-    // Question 7
-    CheckBox question7Choice1;
-    CheckBox question7Choice2;
-    CheckBox question7Choice3;
-    // Question 8
-    EditText question8Answer;
-    // Question 9
-    RadioButton question9Choice4;
-    // Question 10
-    EditText question10Answer;
-
-    String resultsDisplay;
+    private String resultsDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,26 +60,22 @@ public class MainActivity extends AppCompatActivity {
         int answer10Score;
         int finalScore;
 
-        //------------------------------------------------------------------------------------------
-        // Question 1 - Correct Answer is #3 (canines)
-        //------------------------------------------------------------------------------------------
+        // Question 1 - Correct Answer is #1 (canines)
         Boolean answer1;
 
-        question1Choice3 = findViewById(R.id.question1_choice3);
+        RadioButton question1Choice1 = findViewById(R.id.question1_choice1);
 
-        answer1 = question1Choice3.isChecked();
+        answer1 = question1Choice1.isChecked();
         if (answer1) {
             answer1Score = 1;
         } else {
             answer1Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Question 2 - Correct Answer is "vulcanizing"
-        //------------------------------------------------------------------------------------------
         String answer2;
 
-        question2Answer = findViewById(R.id.question2_answer);
+        EditText question2Answer = findViewById(R.id.question2_answer);
 
         answer2 = question2Answer.getText().toString().toLowerCase();
         if (answer2.equals("vulcanizing")) {
@@ -115,18 +84,16 @@ public class MainActivity extends AppCompatActivity {
             answer2Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
-        // Question 3  - Correct Answers are #1 (germanium) and #3 (silicon)
-        //------------------------------------------------------------------------------------------
+        // Question 3  - Correct Answers are #2 (germanium) and #3 (silicon)
         Boolean answer3Choice1;
         Boolean answer3Choice2;
         Boolean answer3Choice3;
         Boolean answer3Choice4;
 
-        question3Choice1 = findViewById(R.id.question3_choice1);
-        question2Choice2 = findViewById(R.id.question3_choice2);
-        question3Choice3 = findViewById(R.id.question3_choice3);
-        question3Choice4 = findViewById(R.id.question3_choice4);
+        CheckBox question3Choice1 = findViewById(R.id.question3_choice1);
+        CheckBox question2Choice2 = findViewById(R.id.question3_choice2);
+        CheckBox question3Choice3 = findViewById(R.id.question3_choice3);
+        CheckBox question3Choice4 = findViewById(R.id.question3_choice4);
 
         answer3Choice1 = question3Choice1.isChecked();
         answer3Choice2 = question2Choice2.isChecked();
@@ -139,12 +106,10 @@ public class MainActivity extends AppCompatActivity {
             answer3Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Question 4 - Correct Answer is "gravity"
-        //------------------------------------------------------------------------------------------
         String answer4;
 
-        question4Answer = findViewById(R.id.question4_answer);
+        EditText question4Answer = findViewById(R.id.question4_answer);
 
         answer4 = question4Answer.getText().toString().toLowerCase();
         if (answer4.equals("gravity")) {
@@ -153,12 +118,10 @@ public class MainActivity extends AppCompatActivity {
             answer4Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
-        // Question 5  - Correct Answers is #2 "volume"
-        //------------------------------------------------------------------------------------------
+        // Question 5  - Correct Answers is #4 "volume"
         Boolean answer5;
 
-        question5Choice4 = findViewById(R.id.question5_choice4);
+        RadioButton question5Choice4 = findViewById(R.id.question5_choice4);
 
         answer5 = question5Choice4.isChecked();
         if (answer5) {
@@ -167,12 +130,10 @@ public class MainActivity extends AppCompatActivity {
             answer5Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Question 6 - Correct Answer is "Clouds" or "Cloud"
-        //------------------------------------------------------------------------------------------
         String answer6;
 
-        question6Answer = findViewById(R.id.question6_answer);
+        EditText question6Answer = findViewById(R.id.question6_answer);
 
         answer6 = question6Answer.getText().toString().toLowerCase();
         if (answer6.equals("clouds") || answer6.equals("cloud")) {
@@ -181,16 +142,14 @@ public class MainActivity extends AppCompatActivity {
             answer6Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
-        // Question 7  - Correct Answers are #3 (solar) and #4 (wind)
-        //------------------------------------------------------------------------------------------
+        // Question 7  - Correct Answers are #1 (solar) and #3 (wind)
         Boolean answer7Choice1;
         Boolean answer7Choice2;
         Boolean answer7Choice3;
 
-        question7Choice1 = findViewById(R.id.question7_choice1);
-        question7Choice2 = findViewById(R.id.question7_choice2);
-        question7Choice3 = findViewById(R.id.question7_choice3);
+        CheckBox question7Choice1 = findViewById(R.id.question7_choice1);
+        CheckBox question7Choice2 = findViewById(R.id.question7_choice2);
+        CheckBox question7Choice3 = findViewById(R.id.question7_choice3);
 
         answer7Choice1 = question7Choice1.isChecked();
         answer7Choice2 = question7Choice2.isChecked();
@@ -202,12 +161,10 @@ public class MainActivity extends AppCompatActivity {
             answer7Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Question 8 - Correct Answer is "Wrist"
-        //------------------------------------------------------------------------------------------
         String answer8;
 
-        question8Answer = findViewById(R.id.question8_answer);
+        EditText question8Answer = findViewById(R.id.question8_answer);
 
         answer8 = question8Answer.getText().toString().toLowerCase();
         if (answer8.equals("wrist")) {
@@ -216,12 +173,10 @@ public class MainActivity extends AppCompatActivity {
             answer8Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
-        // Question 9  - Correct Answers is #2 "water"
-        //------------------------------------------------------------------------------------------
+        // Question 9  - Correct Answers is #4 "water"
         Boolean answer9;
 
-        question9Choice4 = findViewById(R.id.question9_choice4);
+        RadioButton question9Choice4 = findViewById(R.id.question9_choice4);
 
         answer9 = question9Choice4.isChecked();
         if (answer9) {
@@ -230,12 +185,10 @@ public class MainActivity extends AppCompatActivity {
             answer9Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Question 10 - Correct Answer is "smelting"
-        //------------------------------------------------------------------------------------------
         String answer10;
 
-        question10Answer = findViewById(R.id.question10_answer);
+        EditText question10Answer = findViewById(R.id.question10_answer);
 
         answer10 = question10Answer.getText().toString().toLowerCase();
         if (answer10.equals("smelting")) {
@@ -244,9 +197,7 @@ public class MainActivity extends AppCompatActivity {
             answer10Score = 0;
         }
 
-        //------------------------------------------------------------------------------------------
         // Final Score
-        //------------------------------------------------------------------------------------------
         finalScore = answer1Score + answer2Score + answer3Score + answer4Score + answer5Score +
                 answer6Score + answer7Score + answer8Score + answer9Score + answer10Score;
 
